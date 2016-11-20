@@ -4,6 +4,7 @@ import scala.collection.mutable.ListBuffer
   * Created by User on 19/11/2016.
   */
 object DecoratedTree {
+
   def decoratedTree(h:Int,d:Int)= {
     def makeMyRows(h: Int) = {
       var r = new ListBuffer[(Int, Int)]
@@ -21,7 +22,7 @@ object DecoratedTree {
       r.toList
 
     }
-    def turnTuplestoATree(treeComposition: List[(Int, Int)]): List[String] = {
+  def turnTuplestoATree(treeComposition: List[(Int, Int)]): List[String] = {
       for (x <- treeComposition) yield {
         //refactor with escape chars to force a new line as per spec???? TODO
         //is this required speak with BA or PM???
