@@ -26,10 +26,10 @@ object DecoratedTree {
       for (x <- treeComposition) yield {
         //refactor with escape chars to force a new line as per spec???? TODO
         //is this required speak with BA or PM???
-        " " * x._1 + placeDecs("~" * x._2)
+        " " * x._1 + placeDecsArbitarily("~" * x._2)
       }
     }
-    def placeDecs(branch:String)={
+    def placeDecsArbitarily(branch:String)={
       if(branch.length<=d){
         branch
       } else {
